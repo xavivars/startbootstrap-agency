@@ -63,9 +63,9 @@
                     <li>
 						<a class="page-scroll" href="#where">Donde estamos</a>
 					</li>
-                    <li>
+                    <!-- <li>
                         <a class="page-scroll" href="#about">Sobre nosotros</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="page-scroll" href="#contact">Contacto</a>
                     </li>
@@ -154,9 +154,16 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <img src="img/team/sergio.jpg" class="img-responsive img-circle" alt="">
                         <h4>Sergio Ivars</h4>
-                        <p class="text-muted">Abogado</p>
+                        <p class="text-muted">
+							Abogado<br />
+							Colegiado 5276<br />
+							Colegio de Abogados de Alicante
+						</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://www.linkedin.com/in/sergio-ivars-ribes-a2211565"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -177,18 +184,24 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Where Section -->
     <section id="where">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Dónde estamos</h2>
+                    <h3 class="section-subheading text-muted">SIR Grupo Asesor</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-					
+                <div class="col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.216418075757!2d0.0445413153449311!3d38.71283997959963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e011278c070b5%3A0x360738e77eb9d2ad!2sAv.+l&#39;Alc%C3%BAdia%2C+89%2C+03720+Benissa%2C+Alacant!5e0!3m2!1sca!2ses!4v1471178965185" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-6 text-center">
+					<br /><br /><br /><br />
+					<p>Nuestro despacho se encuentra en la <strong>Avda. l'Alcúdia número 89</strong>, en Benissa, en la provincia de Alicante.</p>
+					<p>También puede ponerse en contacto con nosotros a través del <a href="tel:965730981">96 573 09 81</a>, o <a href="#contact">enviándonos un mensaje</a>
+					 (Alicante)</p>
 				</div>
             </div>
         </div>
@@ -280,8 +293,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Contacte con nosotros</h2>
+                    <h3 class="section-subheading text-muted">Puede mandarnos un mensaje a través del formulario inferior. Nos pondremos en contacto con usted con la mayor brevedad posible.</h3>
                 </div>
             </div>
             <div class="row">
@@ -290,28 +303,29 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+									<input type="email" style="display:none" id="email"/>
+                                    <input type="text" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Introduzca su nombre.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="Su email *" id="tx" required data-validation-required-message="Introduzca su dirección de email.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="Su teléfono *" id="phone" required data-validation-required-message="Introduzca su número de teléfono.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Su mensaje *" id="message" required data-validation-required-message="Introduzca su mensaje."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -324,23 +338,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2016</span>
+                    <span class="copyright">Copyright &copy; SIR Grupo Asesor 2016</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
+                        <li><a href="https://www.linkedin.com/in/sergio-ivars-ribes-629648b1"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
+                        <li>
+							<a href="#avisolegal" class="portfolio-link" data-toggle="modal">Aviso legal</a>
                         </li>
-                        <li><a href="#">Terms of Use</a>
+                        <li><a href="#">Condiciones de uso</a>
                         </li>
                     </ul>
                 </div>
@@ -352,7 +362,7 @@
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="avisolegal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -366,9 +376,9 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Project Name</h2>
+                                <h2>Aviso legal</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                                
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                 <p>
                                     <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
