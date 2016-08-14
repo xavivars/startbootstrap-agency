@@ -92,6 +92,11 @@ h1, h2, h3, h4, h5, h6 {
         &.active {
             color: darken(@theme-primary, 10%);
         }
+        
+        img {
+            width: 80px;
+            margin-top: -15px;
+        }
     }
     .navbar-collapse {
         border-color: fade(white, 2%);
@@ -147,6 +152,11 @@ h1, h2, h3, h4, h5, h6 {
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
             transition: all 0.3s;
+            
+            img {
+                width: 120px;
+                margin-top: -30px;
+            }
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
@@ -562,22 +572,22 @@ section#contact {
     ::-webkit-input-placeholder {
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @gray-light;
     }
     :-moz-placeholder { /* Firefox 18- */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @gray-light;
     }
     ::-moz-placeholder {  /* Firefox 19+ */
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @gray-light;
     }
     :-ms-input-placeholder {  
        .heading-font;
        font-weight: 700;
-       color: @gray-lighter;
+       color: @gray-light;
     }
     .text-danger {
         color: @theme-danger;
